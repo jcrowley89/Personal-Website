@@ -162,6 +162,9 @@ button.outline-red:hover {
     top: 0;
     width: 100%;
 }
+.fade-in {
+    transition: background-color 0.5s linear, box-shadow 1s linear;
+}
 .social-links i {
     margin-right: 1.5rem;
 }
