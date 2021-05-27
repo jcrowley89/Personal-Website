@@ -176,8 +176,8 @@ a.outline-red:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: var(--red);
     z-index: -1;
 }
@@ -186,6 +186,7 @@ a.outline-red:hover {
 }
 #siteNav ul {
     list-style: none;
+    padding: 0;
 }
 .nav-link {
     color: var(--white);
