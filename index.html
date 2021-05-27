@@ -18,8 +18,8 @@
     <div class="bg"></div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
-    <div class="container">
-        <div class="navbar">
+    <div class="navbar">
+        <div class="container-flex">
             <div class="social-links">
                 <a href="https://github.com/jcrowley89"><i class="bi-github"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=710285682"><i class="bi-facebook"></i></a>
@@ -28,16 +28,74 @@
             </div>
             <a href="#" id="menuButton"><i class="bi-text-right"></i></a>
         </div>
-        <div class="jumbotron">
-            <div class="jumbotron-text">
-                    <h1><span class="font-weight-lighter">I'm </span><span class="text-red">John Crowley</span></h1>
-                    <span class="text-uppercase text-spaced font-weight-bold text-small">Full-Stack Developer and
-                        Designer</span>
-                    <button class="outline-red">Contact Me</button>
-            </div>
-            <img src="hs-bw.jpg"></img>
-        </div>
     </div>
+    <header class="container-flex jumbotron">
+        <div class="jumbotron-text">
+            <h1><span class="font-weight-lighter">I'm </span><span class="text-red">John Crowley</span></h1>
+            <span class="text-uppercase text-spaced font-weight-bold text-small">Full-Stack Developer and
+                Designer</span>
+            <button class="outline-red">Contact Me</button>
+        </div>
+        <img src="hs.png"></img>
+    </header>
+    <section class="trans-light">
+        <div class="container-flex flex-direction-column">
+            <h2>About Me</h2>
+            <p>
+                I'm a web, mobile, and desktop developer working in JavaScript, PHP, C#, Go, Python, HTML, CSS, and
+                more. With a background in music and graphic design, I bring a creative touch to the technical field of
+                software development. Whether you need a simple one-page website or a large-scale application running on
+                cutting-edge cloud infrastructure, shoot me a message and let's talk!
+            </p>
+            <div class="dev-logos">
+                <img src="dev-logos/html5.svg" alt="" class="dev-logo">
+                <img src="dev-logos/css3.svg" alt="" class="dev-logo">
+                <img src="dev-logos/javascript.svg" alt="" class="dev-logo">
+                <img src="dev-logos/react.svg" alt="" class="dev-logo">
+                <img src="dev-logos/nodejs.svg" alt="" class="dev-logo">
+                <img src="dev-logos/expressjs.svg" alt="" class="dev-logo">
+                <img src="dev-logos/mysql.svg" alt="" class="dev-logo">
+                <img src="dev-logos/php.svg" alt="" class="dev-logo">
+                <img src="dev-logos/laravel.svg" alt="" class="dev-logo">
+                <img src="dev-logos/wordpress.svg" alt="" class="dev-logo">
+                <img src="dev-logos/git.svg" alt="" class="dev-logo">
+                <img src="dev-logos/vscode.svg" alt="" class="dev-logo">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-flex">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus repellendus nisi rem odit, dolor
+            temporibus neque suscipit voluptate impedit fuga harum quia, non, sapiente ullam amet distinctio quas
+            maxime. Tempore dicta explicabo corrupti. Aut pariatur suscipit blanditiis neque architecto asperiores
+            deleniti labore autem numquam. Inventore accusamus ipsa dignissimos alias, ad sit aspernatur libero
+            architecto dolores natus! Necessitatibus vel aliquid temporibus saepe libero neque assumenda eos illo
+            asperiores porro ipsum et voluptates perferendis doloremque, rem sed pariatur unde est alias doloribus
+            tempora, cum possimus! Numquam, atque? Harum deleniti quod dolore? Consequuntur dicta minus laborum enim
+            suscipit ratione blanditiis dolore deleniti libero!
+        </div>
+    </section>
+    <section class="trans-dark text-white">
+        <div class="container-flex justify-content-center flex-direction-column">
+            <h2 class="text-white">Contact Me</h2>
+            <form action="#">
+                <label for="name" hidden>Name:</label>
+                <input type="text" id="name" name="name" value="" placeholder="Name" class="trans-light">
+                <label for="email" hidden>Email:</label>
+                <input type="email" id="email" name="email" value="" placeholder="Email" class="trans-light">
+                <label for="subject" hidden>Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" value="" class="trans-light">
+                <label for="message" hidden>Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Message" class="trans-light"></textarea>
+                <input type="submit" value="Submit" class="bg-red text-white">
+            </form>
+        </div>
+    </section>
+    <footer class="site-footer trans-dark text-white">
+        <div class="container-flex justify-content-center font-weight-lighter text-small">
+            Copyright &copy;2021 John Crowley
+        </div>
+    </footer>
     <script src="main.js"></script>
 </body>
 

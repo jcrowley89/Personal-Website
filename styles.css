@@ -8,6 +8,9 @@
 }
 
 /* Elements */
+* {
+    box-sizing: border-box;
+}
 html {
   height: 100%;
 }
@@ -16,13 +19,34 @@ body {
   font-family: Poppins, sans-serif;
   color: var(--black)
 }
+section {
+    padding: 4rem 0;
+}
+form {
+    width: 100%;
+}
+form input,
+form textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    font-family: Poppins, sans-serif;
+    border-radius: 5px;
+    border: none;
+}
+form input[type=submit] {
+    display: block;
+    margin: 1rem auto;
+    max-width: 60%;
+}
 a {
     color: var(--black)
 }
 a:hover {
     color: var(--gray)
 }
-button {
+button,
+input[type=submit] {
     padding: 0.6rem;
     border: none;
     border-radius: 5px;
@@ -31,6 +55,9 @@ button {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     cursor: pointer;
+}
+.button-container {
+    text-align: center;
 }
 button.outline-red {
     background-color: transparent;
@@ -70,10 +97,18 @@ button.outline-red:hover {
 }
 
 /* Layout */
-.container {
+.container-flex {
+    display: flex;
+    justify-content: space-between;
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
+}
+.flex-direction-column {
+    flex-direction: column;
+}
+.justify-content-center {
+    justify-content: center;
 }
 
 /* Utilities */
@@ -88,6 +123,9 @@ button.outline-red:hover {
 }
 .text-spaced {
     letter-spacing: 0.15rem;
+}
+.text-center {
+    text-align: center;
 }
 .text-small {
     font-size: .9rem;
@@ -104,33 +142,37 @@ button.outline-red:hover {
 .bg-red {
     background-color: var(--red);
 }
+.trans-light {
+    background-color: rgba(255,255,255,0.7);
+}
+.trans-dark {
+    background-color: rgba(0,0,0,0.8)
+}
 
 /* Components */
 .navbar {
-    display: flex;
-    justify-content: space-between;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .social-links i {
     margin-right: 1.5rem;
 }
 #menuButton {
+    position: sticky;
     transform: scale(1.7);
 }
 #menuButton:hover {
     color: var(--red);
 }
 .jumbotron {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 1rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
+    padding: 4rem 1rem;
 }
 .jumbotron img {
     border-radius: 50%;
     max-width: 300px;
-    margin: 0 auto;
     box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.3);
 }
 .jumbotron-text {
@@ -148,14 +190,45 @@ button.outline-red:hover {
 }
 @media (max-width: 700px) {
     .jumbotron {
-        grid-template-columns: 100%;
+        flex-direction: column;
+        padding: 4rem 1rem;
         text-align: center;
     }
     .jumbotron img {
         max-width: 200px;
+        margin: 0 auto;
         order: -1;
+    }
+    .jumbotron-text {
+        margin: 2rem 0;
     }
     .jumbotron h1 {
         font-size: 2rem;
+    }
+}
+.site-footer {
+    text-align: center;
+}
+.dev-logos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 2rem 16px;
+}
+.dev-logo {
+    max-height: 64px;
+    max-width: 50%;
+    margin: 2rem 1rem 0 1rem;
+}
+@media (max-width: 700px) {
+    .dev-logos {
+        grid-template-columns: 33% 34% 33%;
+        grid-gap: 24px;
+    }
+    .dev-logo {
+        max-width: 100%;
     }
 }
