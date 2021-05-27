@@ -161,6 +161,28 @@ button.outline-red:hover {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
+}
+#siteNav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--red);
+    z-index: -1;
+}
+#siteNav.hidden {
+    display: none;
+}
+#siteNav ul {
+    list-style: none;
+}
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
 }
 .fade-in {
     transition: background-color 0.5s linear, box-shadow 1s linear;
