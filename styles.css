@@ -100,7 +100,7 @@ button.outline-red:hover {
 .container-flex {
     display: flex;
     justify-content: space-between;
-    max-width: 800px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -142,11 +142,17 @@ button.outline-red:hover {
 .bg-red {
     background-color: var(--red);
 }
+.bg-white {
+    background-color: var(--white);
+}
 .trans-light {
     background-color: rgba(255,255,255,0.7);
 }
 .trans-dark {
     background-color: rgba(0,0,0,0.8)
+}
+.shadow {
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.3);
 }
 
 /* Components */
@@ -173,7 +179,6 @@ button.outline-red:hover {
 .jumbotron img {
     border-radius: 50%;
     max-width: 300px;
-    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.3);
 }
 .jumbotron-text {
     display: flex;
