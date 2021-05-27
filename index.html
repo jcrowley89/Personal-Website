@@ -26,15 +26,15 @@
                 <a href="https://www.linkedin.com/in/johnvcrowley/"><i class="bi-linkedin"></i></a>
                 <a href="https://twitter.com/JohnCrowleyMus1"><i class="bi-twitter"></i></a>
             </div>
-            <a href="#" id="menuButton"><i class="bi-text-right"></i></a>
+            <button id="menuButton"><i class="bi-text-right"></i></button>
         </div>
         <nav id="siteNav" class="text-center hidden">
             <ul>
                 <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">About Me</a></li>
-                <li><a href="#" class="nav-link">Services</a></li>
-                <li><a href="#" class="nav-link">Portfolio</a></li>
-                <li><a href="#" class="nav-link">Contact Me</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact Me</a></li>
             </ul>
         </nav>
     </div>
@@ -43,11 +43,11 @@
             <h1><span class="font-weight-lighter">I'm </span><span class="text-red">John Crowley</span></h1>
             <span class="text-uppercase text-spaced font-weight-bold text-small">Full-Stack Developer and
                 Designer</span>
-            <button class="outline-red">Contact Me</button>
+            <a href="#contact" class="btn outline-red">Contact Me</a>
         </div>
         <img src="hs.png" class="shadow"></img>
     </header>
-    <section class="trans-light shadow">
+    <section id="about" class="trans-light shadow">
         <div class="container-flex flex-direction-column">
             <h2>About Me</h2>
             <p>
@@ -62,8 +62,8 @@
                 <img src="dev-logos/javascript.svg" alt="" class="dev-logo">
                 <img src="dev-logos/react.svg" alt="" class="dev-logo">
                 <img src="dev-logos/nodejs.svg" alt="" class="dev-logo">
-                <img src="dev-logos/expressjs.svg" alt="" class="dev-logo">
-                <img src="dev-logos/mysql.svg" alt="" class="dev-logo">
+                <img src="dev-logos/expressjs.svg" alt="" class="dev-logo"">
+                <img src=" dev-logos/mysql.svg" alt="" class="dev-logo">
                 <img src="dev-logos/php.svg" alt="" class="dev-logo">
                 <img src="dev-logos/laravel.svg" alt="" class="dev-logo">
                 <img src="dev-logos/wordpress.svg" alt="" class="dev-logo">
@@ -72,29 +72,32 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="services">
         <div class="container-flex flex-direction-column">
             <h2>Services</h2>
-            <p>
-            <ul>
-                <li>Static Websites</li>
-                <li>Wordpress Websites</li>
-                <li>Custom Wordpress Themes</li>
-                <li>Application Development</li>
-                <li>Custom Projects</li>
-            </ul>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus repellendus nisi rem odit, dolor
-            temporibus neque suscipit voluptate impedit fuga harum quia, non, sapiente ullam amet distinctio quas
-            maxime. Tempore dicta explicabo corrupti. Aut pariatur suscipit blanditiis neque architecto asperiores
-            deleniti labore autem numquam. Inventore accusamus ipsa dignissimos alias, ad sit aspernatur libero
-            architecto dolores natus! Necessitatibus vel aliquid temporibus saepe libero neque assumenda eos illo
-            asperiores porro ipsum et voluptates perferendis doloremque, rem sed pariatur unde est alias doloribus
-            tempora, cum possimus! Numquam, atque? Harum deleniti quod dolore? Consequuntur dicta minus laborum enim
-            suscipit ratione blanditiis dolore deleniti libero!
-            </p>
+            <div class="services-cards">
+                <div class="services-card trans-light shadow">
+                    <i class="services-icon bi-window"></i>
+                    <h3>Custom Websites</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, praesentium.
+                    </p>
+                </div>
+                <div class="services-card trans-light shadow">
+                    <i class="services-icon bi-file-earmark-word"></i>
+                    <h3>Wordpress Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem accusamus adipisci quo.
+                    </p>
+                </div>
+                <div class="services-card trans-light shadow">
+                    <i class="services-icon bi-laptop"></i>
+                    <h3>Application Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, voluptates aspernatur?
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="trans-light shadow">
+    <section id="portfolio" class="trans-light shadow">
         <div class="container-flex flex-direction-column">
             <h2>Portfoilio</h2>
             <div class="portfolio-images">
@@ -105,9 +108,9 @@
             </div>
         </div>
     </section>
-    <section class="trans-dark text-white shadow">
+    <section id="contact">
         <div class="container-flex justify-content-center flex-direction-column">
-            <h2 class="text-white">Contact Me</h2>
+            <h2>Contact Me</h2>
             <form action="#">
                 <label for="name" hidden>Name:</label>
                 <input type="text" id="name" name="name" value="" placeholder="Name" class="trans-light">
@@ -121,7 +124,7 @@
             </form>
         </div>
     </section>
-    <footer class="site-footer trans-dark text-white">
+    <footer class="site-footer trans-dark text-white shadow">
         <div class="container-flex justify-content-center font-weight-lighter text-small">
             Copyright &copy;2021 John Crowley
         </div>

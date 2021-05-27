@@ -13,6 +13,7 @@
 }
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -34,18 +35,25 @@ form textarea {
     border-radius: 5px;
     border: none;
 }
+form input[type=text],
+form input[type=email],
+form textarea {
+    border: 1px solid #eee;
+}
 form input[type=submit] {
     display: block;
     margin: 1rem auto;
     max-width: 60%;
 }
 a {
-    color: var(--black)
+    color: var(--black);
+    text-decoration: none;
 }
 a:hover {
     color: var(--gray)
 }
 button,
+a.btn,
 input[type=submit] {
     padding: 0.6rem;
     border: none;
@@ -55,16 +63,15 @@ input[type=submit] {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     cursor: pointer;
-}
-.button-container {
     text-align: center;
 }
-button.outline-red {
+a.outline-red {
     background-color: transparent;
     color: var(--red);
     border: 2px solid var(--red);
 }
-button.outline-red:hover {
+button.outline-red:hover,
+a.outline-red:hover {
     background-color: var(--red);
     color: var(--white);
 }
@@ -191,8 +198,8 @@ button.outline-red:hover {
     margin-right: 1.5rem;
 }
 #menuButton {
-    position: sticky;
-    transform: scale(1.7);
+    transform: scale(3);
+    background-color: rgba(255,255,255,0);
 }
 #menuButton:hover {
     color: var(--red);
@@ -215,7 +222,7 @@ button.outline-red:hover {
     margin-top: 0;
     margin-bottom: 1rem;
 }
-.jumbotron-text button {
+.jumbotron-text a.btn {
     margin-top: 1.5rem;
 }
 @media (max-width: 700px) {
@@ -253,6 +260,10 @@ button.outline-red:hover {
     max-width: 50%;
     margin: 2rem 1rem 0 1rem;
 }
+.dev-logo:hover {
+    transform: scale(1.1) translate(0, -4px);
+    transition: transform 0.2s ease-in;
+}
 @media (max-width: 700px) {
     .dev-logos {
         grid-template-columns: 33% 34% 33%;
@@ -273,4 +284,19 @@ button.outline-red:hover {
     .portfolio-images {
         grid-template-columns: 100%;
     }
+}
+.services-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem 0;
+}
+.services-card {
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+.services-icon {
+    font-size: 4rem;
+    color: var(--red);
 }
