@@ -262,3 +262,15 @@ button.outline-red:hover {
         max-width: 100%;
     }
 }
+.portfolio-images {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.portfolio-img {
+    width: 100%;
+}
+@media (max-width: 500px) {
+    .portfolio-images {
+        grid-template-columns: 100%;
+    }
+}
