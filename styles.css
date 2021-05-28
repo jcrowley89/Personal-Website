@@ -186,7 +186,12 @@ a.outline-red:hover {
 }
 #siteNav ul {
     list-style: none;
-    padding: 0;
+    padding: 2rem 0 0 0;
+}
+#siteNav ul li {
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem;
 }
 .nav-link {
     color: var(--white);
