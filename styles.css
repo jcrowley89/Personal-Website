@@ -173,6 +173,7 @@ a.outline-red:hover {
 #siteNav {
     position: fixed;
     top: 0;
+    opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,9 +181,12 @@ a.outline-red:hover {
     height: 100%;
     background-color: var(--red);
     z-index: -1;
+    transition: opacity 0.3s linear;
 }
 #siteNav.hidden {
-    display: none;
+    opacity: 0;
+    height: 0;
+    width: 0;
 }
 #siteNav ul {
     list-style: none;
